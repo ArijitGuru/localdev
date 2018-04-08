@@ -9,15 +9,15 @@ public class Test {
 		// TODO Auto-generated method stub
 		int a = 10;
 		int b = 20;
+		int c = a+b;
 		System.out.println("Enter number ...: ");
 		BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
-		String inputStr;
 		try {
-			int value = Integer.parseInt(inputStr = br.readLine());
-			System.out.println("Input is ...: " + value);
-			System.out.println("Sum is ...: " + a+b);
+				int value = Integer.parseInt(br.readLine());
+				System.out.println("Input is ...: " + value);
+				System.out.println("Sum is ...: " + c);
+			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
