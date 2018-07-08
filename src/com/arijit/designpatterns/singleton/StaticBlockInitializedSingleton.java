@@ -9,6 +9,11 @@ package com.arijit.designpatterns.singleton;
 public class StaticBlockInitializedSingleton {
 	private static StaticBlockInitializedSingleton instance = null;
 	
+	//private constructor to avoid calling outside the class
+	private StaticBlockInitializedSingleton() {
+		
+	}
+	
 	static {
 		try {
 			instance = new StaticBlockInitializedSingleton();

@@ -3,6 +3,11 @@ package com.arijit.designpatterns.singleton;
 public class LazyInitializedSingleton {
 	private LazyInitializedSingleton instance = null;
 	
+	//private constructor to avoid calling outside the class
+	private LazyInitializedSingleton() {
+		
+	}
+	
 	public LazyInitializedSingleton getInstance () {
 		if (instance == null) {
 			instance = new LazyInitializedSingleton();
