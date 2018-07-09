@@ -22,7 +22,9 @@ public class SerializableSingleton implements Serializable{
 	
 	// Java reflection destroys the singleton pattern, to overcome this scenario all
 	// we need to do it provide the implementation of readResolve() method.
-	protected Object readResolve() {
+	
+	//uncomment below method to make Singleton Serialization safe
+	/*protected Object readResolve() {
 		return getInstance();
-	}
+	}*/
 }
