@@ -16,7 +16,7 @@ public class SerializableSingleton implements Serializable{
 		private static SerializableSingleton INSTANCE = new SerializableSingleton();
 	}
 
-	public SerializableSingleton getInstance() {
+	public static SerializableSingleton getInstance() {
 		return SerializableSingletonHelper.INSTANCE;
 	}
 	
