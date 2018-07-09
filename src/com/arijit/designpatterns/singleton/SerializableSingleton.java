@@ -24,7 +24,7 @@ public class SerializableSingleton implements Serializable{
 	// we need to do it provide the implementation of readResolve() method.
 	
 	//uncomment below method to make Singleton Serialization safe
-	/*protected Object readResolve() {
+	protected Object readResolve() {
 		return getInstance();
-	}*/
+	}
 }
